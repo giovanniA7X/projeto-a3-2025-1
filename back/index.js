@@ -1,16 +1,29 @@
-const express = require ('express')
-const { GoogleGenAI } = require ('@google/genai')
-const app = express()
-app.use(express.json())
+const express = require('express');
+const cors = require('cors');
+const { GoogleGenerativeAI } = require('@google/generative-ai');
+const app = express();
+require('dotenv').config();
+
+app.use(cors());
+app.use(express.json());
+
+// Instância com sua chave da API
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 app.post('/pergunte-ao-gemini', async (req, res) => {
-    const ai = new GoogleGenAI ({apiKey: "AIzaSyB7xfmO7fdA-VrwqYR83lVrpuxr9u73k-c"});
-    const prompt = req.body.prompt
-    const response = await ai.models.generateContent({
-        model: "gemini-2.0-flash",
-        contents: prompt, 
-    });
-    res.json({"resposta": response.text})
-})
+  try {
+    const prompt = req.body.prompt;
 
-app.listen(3000, () => console.log("Beleza, rodando"))
+    const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+    const result = await model.generateContent(prompt);
+    const response = result.response;
+    const text = response.text();
+
+    res.json({ resposta: text });
+  } catch (error) {
+    console.error('Erro:', error.message);
+    res.status(500).json({ erro: 'Erro ao consultar Gemini' });
+  }
+});
+
+app.listen(3000, () => console.log('Servidor rodando em http://localhost:3000'));

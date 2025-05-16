@@ -1,7 +1,9 @@
-import { useState } from 'react'
+import React from 'react';
 import Produto from './components/Produto.jsx';
 import Banner from './components/Banner.jsx';
 import logo from './assets/The_Blockside_Logo.png'
+import ConsultorChatbot from './CosultorChatbot.jsx';
+import env from 'react-dotenv';
 
 
 function App() {
@@ -18,7 +20,6 @@ function App() {
           color: "#fff",
         }}
       >
-
         <img
           src={logo}
           alt="Logo The Blockside"
@@ -93,6 +94,8 @@ function App() {
           preco="89,90"
           imagem="https://images.tcdn.com.br/img/img_prod/962394/calca_jogger_yod_couture_bolso_cargo_palha_8193_1_2a567b07a7b59a6a7534a0f940367238.jpeg"
         />
+
+        <ConsultorChatbot />
       </div>
     </div>
   );
