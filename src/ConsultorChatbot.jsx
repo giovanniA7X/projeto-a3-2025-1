@@ -10,7 +10,7 @@ function ConsultorChatbot() {
     if (!pergunta.trim()) return;
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:5173/pergunte-ao-gemini', {
+      const res = await fetch('http://localhost:3000/pergunte-ao-gemini', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },    
         body: JSON.stringify({ pergunta }),
