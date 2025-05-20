@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Produto from './components/Produto.jsx';
 import Banner from './components/Banner.jsx';
-import logo from './assets/The_Blockside_Logo.png'
+import logo from './assets/The_Blockside_Logo.png';
 import ConsultorChatbot from './ConsultorChatbot.jsx';
+import './App.css';
+
 
 
 function App() {
+  const [mostrarChat, setMostrarChat] = useState(false);
+
+  const toggleChat = () => {
+    setMostrarChat(!mostrarChat);
+  };
 
   return (
     <div>
@@ -14,9 +21,14 @@ function App() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "10px 20px",
-          backgroundColor: "#222",
+          padding: "20px 40px",
+          backgroundColor: "transparent",
           color: "#fff",
+          position:"absolute",
+          top:"0",
+          left:"0",
+          width:"100%",
+          zIndex: 10,
         }}
       >
         <img
@@ -25,7 +37,6 @@ function App() {
           style={{ height: "200px", objectFit: "contain" }}
         />
 
-        {/* Barra de busca */}
         <input
           type="text"
           placeholder="Buscar produtos..."
@@ -93,13 +104,17 @@ function App() {
           preco="89,90"
           imagem="https://images.tcdn.com.br/img/img_prod/962394/calca_jogger_yod_couture_bolso_cargo_palha_8193_1_2a567b07a7b59a6a7534a0f940367238.jpeg"
         />
-
-
       </div>
-      <ConsultorChatbot />
-    </div>
 
+      {mostrarChat && <ConsultorChatbot />}
+
+      <button className="botao-consultor" onClick={toggleChat} aria-label="Abrir Chat">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="28" height="28">
+          <path d="M12 3C6.48 3 2 6.92 2 11.5c0 2.2 1.02 4.19 2.7 5.68L4 21l4.07-1.35C9.26 20.21 10.6 20.5 12 20.5c5.52 0 10-3.92 10-9S17.52 3 12 3z"/>
+        </svg>
+      </button>
+    </div>
   );
 }
 
-export default App
+export default App;

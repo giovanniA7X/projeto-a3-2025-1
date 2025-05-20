@@ -1,0 +1,127 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9fafb;
+    color: #111;
+  }
+  
+  /* Container geral */
+  .app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+  }
+  
+  /* Header mais clean e compacto */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    height: 70px;
+    object-fit: contain;
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    max-width: 400px;
+    margin: 0 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #4F46E5;
+    box-shadow: 0 0 6px #c3baff;
+  }
+  
+  .header-nav {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .nav-btn {
+    background-color: #4F46E5;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+    background-color: #4338ca;
+  }
+  
+  /* Banner maior */
+  .main-banner {
+    margin: 30px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  }
+  
+  /* Título destaque */
+  .produtos-section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  /* Grid de produtos moderno e responsivo */
+  .produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    gap: 24px;
+    justify-items: center;
+    padding-bottom: 30px;
+  }
+  
+  /* Botão chatbot fixo, moderno */
+  .botao-consultor {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #4F46E5;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    z-index: 10001;
+  }
+  
+  .botao-consultor:hover {
+    background-color: #4338ca;
+  }
+  

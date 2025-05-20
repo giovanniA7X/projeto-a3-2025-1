@@ -1,0 +1,92 @@
+.chatbot-container {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 360px;
+    max-height: 480px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 10000;
+  }
+  
+  .chat-area {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #222;
+  }
+  
+  .input-area {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-area input {
+    flex: 1;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  .input-area input:focus {
+    border-color: #4F46E5;
+  }
+  
+  .input-area button {
+    background-color: #4F46E5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-area button:hover {
+    background-color: #4338ca;
+  }
+  
+  .mensagem-bot {
+    background-color: #f3f4f6;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    white-space: pre-wrap; /* preserva quebras de linha da resposta */
+  }
+  
+  .botoes-pos-resposta {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .botoes-pos-resposta button {
+    flex: 1;
+    background-color: #e5e7eb;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .botoes-pos-resposta button:hover {
+    background-color: #d1d5db;
+  }
+  
+  .digitando {
+    font-style: italic;
+    color: #666;
+  }
+  
