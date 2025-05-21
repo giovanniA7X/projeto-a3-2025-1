@@ -125,3 +125,12 @@
     background-color: #4338ca;
   }
   
+  nav div:hover .dropdown-masculino {
+    display: flex;
+  }
+  
+  .dropdown-masculino a:hover {
+    color: #000;
+    font-weight: 500;
+    text-decoration: underline;
+  }

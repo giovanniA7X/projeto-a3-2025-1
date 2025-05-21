@@ -4,6 +4,9 @@ import Banner from './components/Banner.jsx';
 import logo from './assets/The_Blockside_Logo.png';
 import ConsultorChatbot from './ConsultorChatbot.jsx';
 import './App.css';
+import Menu from './components/Menu.jsx';
+
+
 
 
 
@@ -35,18 +38,6 @@ function App() {
           src={logo}
           alt="Logo The Blockside"
           style={{ height: "200px", objectFit: "contain" }}
-        />
-
-        <input
-          type="text"
-          placeholder="Buscar produtos..."
-          style={{
-            padding: "8px 12px",
-            borderRadius: "20px",
-            border: "none",
-            width: "300px",
-            maxWidth: "100%",
-          }}
         />
 
         <div style={{ display: "flex", gap: "16px" }}>
@@ -86,6 +77,7 @@ function App() {
       </header>
 
       <Banner />
+      <Menu />
 
       <h2 style={{ textAlign: "center", margin: "30px 0" }}>Destaques</h2>
       <div style={{ display: "flex", gap: "20px", justifyContent: "center", flexWrap: "wrap" }}>
