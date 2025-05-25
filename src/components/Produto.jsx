@@ -1,27 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Produto({ nome, preco, imagem }) {
+function Produto({ nome, preco, imagemPrincipal, imagemSecundaria }) {
+  const [hover, setHover] = useState(false);
+
   return (
     <div
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
       style={{
-        width: "220px",
-        background: "#fff",
-        border: "1px solid #ddd",
-        borderRadius: "10px",
-        padding: "16px",
+        width: "100%",
+        overflow: "hidden",
+        cursor: "pointer",
         textAlign: "center",
-        boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
       }}
     >
       <img
-        src={imagem}
+        src={hover ? imagemSecundaria : imagemPrincipal}
         alt={nome}
         style={{
           width: "100%",
-          height: "220px",
+          height: "475px",
           objectFit: "cover",
-          borderRadius: "8px",
-          marginBottom: "12px",
+          display: "block",
         }}
       />
       <h3 style={{ fontSize: "1rem", fontWeight: "bold", marginBottom: "6px" }}>
