@@ -1,13 +1,11 @@
 import React from "react";
 
-function Banner() {
-  const backgroundImageUrl = "https://images.tcdn.com.br/img/img_prod/476013/1704292726_streetwear_banner_prison-baseball.jpg"; // Coloque aqui o link da sua imagem
-
+function Banner({ imagem }) {
   return (
     <div
       style={{
         position: "relative",
-        backgroundImage: `url(${backgroundImageUrl})`,
+        backgroundImage: `url(${imagem})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         color: "#fff",
@@ -19,7 +17,6 @@ function Banner() {
         justifyContent: "center",
       }}
     >
-      {/* Overlay para escurecer a imagem e dar contraste ao texto */}
       <div
         style={{
           position: "absolute",
@@ -31,9 +28,8 @@ function Banner() {
           zIndex: 1,
         }}
       />
-      {/* Conteúdo do banner */}
       <div style={{ position: "relative", zIndex: 2 }}>
-        <h1 style={{ fontSize: "2.5rem", marginBottom: "10px" }}>The Blockside</h1>
+        <h1 style={{ fontSize: "2.5rem", marginBottom: "30px" }}>The Blockside</h1>
         <p style={{ fontSize: "1.2rem" }}>
           Roupas e acessórios streetwear — estilo que fala alto.
         </p>

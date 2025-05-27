@@ -14,6 +14,7 @@ import camisetaOversizedSecundaria from './assets/camisetaOversizedSecundaria.pn
 import shoulderBag1 from './assets/shoulderBag1.png';
 import shoulderBag2 from './assets/shoulderBag2.png';
 import bannerSecundario from './assets/bannerSecundario.png';
+import Banner_TheBlockside from './assets/Banner_TheBlockside.png';
 
 
 
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <div>
+
       <header
         style={{
           display: "flex",
@@ -41,25 +43,42 @@ function App() {
           width: "100%",
           zIndex: 10,
         }}
+
       >
+        <div
+          style={{
+            position: "absolute",
+            top: "20px", // ou "0px" se quiser mais colado
+            left: "20px",
+          }}
+        >
         <img
           src={logo}
           alt="Logo The Blockside"
-          style={{ height: "200px", objectFit: "contain" }}
+          style={{ height: "150px", objectFit: "contain" }}
         />
-
-        <div style={{ display: "flex", gap: "16px" }}>
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            top: "20px",
+            right: "20px",
+            display: "flex",
+            gap: "16px",
+            alignItems: "center"
+          }}
+        >
           <button
             style={{
-              backgroundColor: "#444",
+              backgroundColor: "transparent",
               color: "#fff",
               border: "none",
-              padding: "8px 12px",
-              borderRadius: "8px",
+              fontSize: "16px",
               cursor: "pointer",
+              textDecoration: "underline",
               display: "flex",
               alignItems: "center",
-              gap: "8px"
+              gap: "6px"
             }}
           >
             <i className="fa-solid fa-user"></i>
@@ -67,24 +86,24 @@ function App() {
           </button>
           <button
             style={{
-              backgroundColor: "#444",
+              backgroundColor: "transparent",
               color: "#fff",
               border: "none",
-              padding: "8px 12px",
-              borderRadius: "8px",
+              fontSize: "16px",
               cursor: "pointer",
+              textDecoration: "underline",
               display: "flex",
               alignItems: "center",
-              gap: "8px"
+              gap: "6px"
             }}
           >
             <i className="fa-solid fa-cart-shopping"></i>
             Carrinho
           </button>
         </div>
-      </header>
+      </header >
 
-      <Banner />
+      <Banner imagem={Banner_TheBlockside} />
       <Menu />
 
       <h2 style={{ textAlign: "center", margin: "30px 0" }}>Destaques</h2>
@@ -179,7 +198,7 @@ function App() {
           <path d="M12 3C6.48 3 2 6.92 2 11.5c0 2.2 1.02 4.19 2.7 5.68L4 21l4.07-1.35C9.26 20.21 10.6 20.5 12 20.5c5.52 0 10-3.92 10-9S17.52 3 12 3z" />
         </svg>
       </button>
-    </div>
+    </div >
   );
 }
 
