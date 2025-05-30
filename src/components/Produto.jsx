@@ -20,7 +20,7 @@ function Produto({ nome, preco, imagemPrincipal, imagemSecundaria }) {
         style={{
           width: "100%",
           height: "475px",
-          objectFit: "cover",
+          objectFit: "contain",
           display: "block",
         }}
       />

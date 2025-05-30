@@ -15,6 +15,14 @@ import shoulderBag1 from './assets/shoulderBag1.png';
 import shoulderBag2 from './assets/shoulderBag2.png';
 import bannerSecundario from './assets/bannerSecundario.png';
 import Banner_TheBlockside from './assets/Banner_TheBlockside.png';
+import calçaCargo from './assets/calçaCargo.png';
+import calçaCargo2 from './assets/calçaCargo2.png';
+import calçaPantalona from './assets/calçaPantalona.png';
+import calçaPantalona2 from './assets/calçaPantalona2.png';
+import saiaCargo from './assets/saiaCargo.png';
+import saiaCargo2 from './assets/saiaCargo2.png';
+import topAlcinha from './assets/topAlcinha.png';
+import topAlcinha2 from './assets/topAlcinha2.png';
 
 
 
@@ -166,28 +174,28 @@ function App() {
         }}
       >
         <Produto
-          nome="Camiseta Urban"
+          nome="Calça Cargo Feminina | Azul Escuro"
           preco="119,90"
-          imagemPrincipal="/imgs/produtos/camiseta-urban-1.jpg"
-          imagemSecundaria="/imgs/produtos/camiseta-urban-2.jpg"
+          imagemPrincipal={calçaCargo}
+          imagemSecundaria={calçaCargo2}
         />
         <Produto
-          nome="Moletom Oversized"
-          preco="189,90"
-          imagemPrincipal="/imgs/produtos/moletom-1.jpg"
-          imagemSecundaria="/imgs/produtos/moletom-2.jpg"
+          nome="Saia Cargo | Grafite"
+          preco="89,90"
+          imagemPrincipal={saiaCargo}
+          imagemSecundaria={saiaCargo2}
         />
         <Produto
-          nome="Bermuda Cargo"
-          preco="99,90"
-          imagemPrincipal="/imgs/produtos/bermuda-cargo-1.jpg"
-          imagemSecundaria="/imgs/produtos/bermuda-cargo-2.jpg"
+          nome="Calça Patalona | Preta com Listras Brancas"
+          preco="129,90"
+          imagemPrincipal={calçaPantalona}
+          imagemSecundaria={calçaPantalona2}
         />
         <Produto
-          nome="Calça Techwear"
-          preco="159,90"
-          imagemPrincipal="/imgs/produtos/calca-tech-1.jpg"
-          imagemSecundaria="/imgs/produtos/calca-tech-2.jpg"
+          nome="Top Alcinha | Café"
+          preco="79,90"
+          imagemPrincipal={topAlcinha}
+          imagemSecundaria={topAlcinha2}
         />
       </div>
 

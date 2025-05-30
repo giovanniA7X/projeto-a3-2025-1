@@ -34,21 +34,22 @@ function ConsultorChatbot() {
   return (
     <div className="chatbot-container">
       <div className="chat-area">
-        {resposta && (
+        {respostaCompleta && (
           <div className="mensagem-bot">
-            <p>{resposta}</p>
-            {resposta !== respostaCompleta && (
-              <button onClick={detalharMais}>Ver mais detalhes</button>
-            )}
+            {respostaCompleta.split("\n").map((linha, index) => (
+              <p key={index} style={{ marginBottom: "10px", lineHeight: "1.6" }}>
+                {linha}
+              </p>
+            ))}
             <div className="botoes-pos-resposta">
               <button onClick={() => setPergunta("")}>Nova pergunta</button>
-              <button onClick={detalharMais}>Detalhar mais</button>
-              <button onClick={() => navigator.clipboard.writeText(resposta)}>
+              <button onClick={() => navigator.clipboard.writeText(respostaCompleta)}>
                 Copiar resposta
               </button>
             </div>
           </div>
         )}
+
         {carregando && <p className="digitando">Consultando Gemini...</p>}
       </div>
 
