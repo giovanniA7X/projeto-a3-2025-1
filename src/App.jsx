@@ -23,6 +23,7 @@ import saiaCargo from './assets/saiaCargo.png';
 import saiaCargo2 from './assets/saiaCargo2.png';
 import topAlcinha from './assets/topAlcinha.png';
 import topAlcinha2 from './assets/topAlcinha2.png';
+import Rodapé from './components/Rodape.jsx';
 
 
 
@@ -60,11 +61,11 @@ function App() {
             left: "20px",
           }}
         >
-        <img
-          src={logo}
-          alt="Logo The Blockside"
-          style={{ height: "150px", objectFit: "contain" }}
-        />
+          <img
+            src={logo}
+            alt="Logo The Blockside"
+            style={{ height: "150px", objectFit: "contain" }}
+          />
         </div>
         <div
           style={{
@@ -114,7 +115,7 @@ function App() {
       <Banner imagem={Banner_TheBlockside} />
       <Menu />
 
-      <h2 style={{ textAlign: "center", margin: "30px 0" }}>Destaques</h2>
+      <h2 style={{ textAlign: "center", margin: "30px 0" }}>DESTAQUES</h2>
       <div style={{
         padding: "0 8px",
         display: "grid",
@@ -123,25 +124,25 @@ function App() {
         margin: "0",
       }}>
         <Produto
-          nome="Camiseta Oversized"
+          nome="Camiseta Oversized | Preta"
           preco="129,90"
           imagemPrincipal={camisetaOversized}
           imagemSecundaria={camisetaOversizedSecundaria}
         />
         <Produto
-          nome="Boné Dadhat"
+          nome="Boné Dadhat | Preto"
           preco="59,90"
           imagemPrincipal={boneDadhat}
           imagemSecundaria={boneDadHatsecundario}
         />
         <Produto
-          nome="Calça Jogger"
+          nome="Calça Jogger | Bege"
           preco="89,90"
           imagemPrincipal={calçaJogger}
           imagemSecundaria={calçaJoggerSecundaria}
         />
         <Produto
-          nome="Shoulder Bag"
+          nome="Shoulder Bag | Preta"
           preco="79,90"
           imagemPrincipal={shoulderBag1}
           imagemSecundaria={shoulderBag2}
@@ -162,7 +163,7 @@ function App() {
         />
       </div>
 
-      <h2 style={{ textAlign: "center", margin: "30px 0" }}>Feminino</h2>
+      <h2 style={{ textAlign: "center", margin: "30px 0" }}>FEMININO</h2>
 
       <div
         style={{
@@ -196,8 +197,10 @@ function App() {
           preco="79,90"
           imagemPrincipal={topAlcinha}
           imagemSecundaria={topAlcinha2}
-        />
+        /> 
       </div>
+
+      <Rodapé />
 
       {mostrarChat && <ConsultorChatbot />}
 

@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     box-sizing: border-box;
   }
@@ -10,14 +9,14 @@
     color: #111;
   }
   
-  /* Container geral */
+
   .app-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px 60px;
   }
   
-  /* Header mais clean e compacto */
+
   .header {
     display: flex;
     align-items: center;
@@ -93,7 +92,7 @@
     color: #333;
   }
   
-  /* Grid de produtos moderno e responsivo */
+  /* Grid de produtos */
   .produtos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
@@ -102,7 +101,7 @@
     padding-bottom: 30px;
   }
   
-  /* Botão chatbot fixo, moderno */
+  /* Botão chatbot fixo */
   .botao-consultor {
     position: fixed;
     bottom: 25px;

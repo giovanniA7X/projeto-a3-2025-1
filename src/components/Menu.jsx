@@ -1,11 +1,10 @@
-import React from 'react';
 import './Menu.css';
 
 function Menu() {
   return (
     <nav className="main-menu">
       <div className="menu-item has-dropdown">
-        <span>Masculino</span>
+        <span>MASCULINO</span>
         <div className="dropdown">
           <a href="#">Camisetas Streetwear</a>
           <a href="#">Camisetas Básicas</a>
@@ -20,7 +19,7 @@ function Menu() {
       </div>
 
       <div className="menu-item has-dropdown">
-        <span>Feminino</span>
+        <span>FEMININO</span>
         <div className="dropdown">
           <a href="#">Cropped Streetwear</a>
           <a href="#">Camisetas Femininas</a>
@@ -33,7 +32,7 @@ function Menu() {
       </div>
 
       <div className="menu-item has-dropdown">
-        <span>Novidades</span>
+        <span>NOVIDADES</span>
         <div className="dropdown">
           <a href="#">Lançamentos</a>
           <a href="#">Mais Vendidos</a>
@@ -42,7 +41,7 @@ function Menu() {
       </div>
 
       <div className="menu-item has-dropdown">
-        <span>Acessórios</span>
+        <span>ACESSÓRIOS</span>
         <div className="dropdown">
           <a href="#">Bonés</a>
           <a href="#">Meias</a>
@@ -52,7 +51,7 @@ function Menu() {
       </div>
 
       <div className="menu-item has-dropdown">
-        <span className="sale">🔥 Sale</span>
+        <span className="sale">🔥 SALE | ATÉ 50% OFF!</span>
         <div className="dropdown">
           <a href="#">Até 30% OFF</a>
           <a href="#">Até 50% OFF</a>
