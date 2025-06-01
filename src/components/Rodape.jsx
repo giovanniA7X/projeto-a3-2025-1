@@ -1,4 +1,3 @@
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faCcVisa,
@@ -22,7 +21,7 @@ export default function Footer() {
                     margin: '0 auto'
                 }}
             >
-                {/* Newsletter Section */}
+                {/* Seção Newsletter */}
                 <div style={{ flex: '1 1 300px' }}>
                     <h3 style={{ marginBottom: '10px' }}>Newsletter</h3>
                     <p>Assine e receba novidades e promoções exclusivas!</p>
@@ -43,7 +42,7 @@ export default function Footer() {
                                 padding: '10px',
                                 borderRadius: '6px',
                                 border: 'none',
-                                backgroundColor: '#4F46E5',
+                                backgroundColor: '#000000',
                                 color: '#fff',
                                 cursor: 'pointer'
                             }}
@@ -53,7 +52,7 @@ export default function Footer() {
                     </form>
                 </div>
 
-                {/* Institutional Links */}
+                {/* Seção Institucional */}
                 <div style={{ flex: '1 1 200px' }}>
                     <h3 style={{ marginBottom: '10px' }}>Institucional</h3>
                     <ul style={{ listStyle: 'none', padding: 0, lineHeight: '1.8' }}>
@@ -74,7 +73,7 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                {/* Contact Info */}
+                {/* Seção Contatos */}
                 <div style={{ flex: '1 1 200px' }}>
                     <h3 style={{ marginBottom: '10px' }}>Contato</h3>
                     <p>

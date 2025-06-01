@@ -20,7 +20,6 @@ function ConsultorChatbot() {
       });
       const data = await resp.json();
       const raw = data.resposta.trim();
-      // Extrai cada bloco 'Look X:' usando regex com matchAll
       const matches = Array.from(
         raw.matchAll(/(Look \d+:)([\s\S]*?)(?=Look \d+:|$)/g)
       );

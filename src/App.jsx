@@ -187,7 +187,7 @@ function App() {
           imagemSecundaria={saiaCargo2}
         />
         <Produto
-          nome="Calça Patalona | Preta com Listras Brancas"
+          nome="Calça Pantalona | Preta com Listras Brancas"
           preco="129,90"
           imagemPrincipal={calçaPantalona}
           imagemSecundaria={calçaPantalona2}
