@@ -57,7 +57,7 @@ function App() {
         <div
           style={{
             position: "absolute",
-            top: "20px", // ou "0px" se quiser mais colado
+            top: "20px",
             left: "20px",
           }}
         >

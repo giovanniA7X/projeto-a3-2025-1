@@ -32,7 +32,7 @@ function ConsultorChatbot() {
     }
   };
 
-  // Função para renderizar título, listas ou parágrafos
+
   const renderBloco = (text) => {
     const sections = text.split(/\n\n/);
     return sections.map((sec, idx) => {
