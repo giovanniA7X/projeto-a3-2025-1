@@ -1,5 +1,3 @@
-
-
 function Banner({ imagem }) {
   return (
     <div
