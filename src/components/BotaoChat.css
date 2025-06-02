@@ -1,0 +1,16 @@
+.botao-consultor {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.botao-consultor:hover {
+  background-color: #333;
+}

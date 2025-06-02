@@ -5,6 +5,7 @@ import logo from './assets/The_Blockside_Logo.png';
 import ConsultorChatbot from './ConsultorChatbot.jsx';
 import './App.css';
 import Menu from './components/Menu.jsx';
+import BotaoChat from './components/BotaoChat.jsx';
 import camisetaOversized from './assets/camisetaOversized.png';
 import boneDadhat from './assets/boneDadhat.png';
 import boneDadHatsecundario from './assets/boneDadHatsecundario.png';
@@ -197,19 +198,15 @@ function App() {
           preco="79,90"
           imagemPrincipal={topAlcinha}
           imagemSecundaria={topAlcinha2}
-        /> 
+        />
       </div>
 
       <Rodapé />
 
       {mostrarChat && <ConsultorChatbot />}
 
-      <button className="botao-consultor" onClick={toggleChat} aria-label="Abrir Chat">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="28" height="28">
-          <path d="M12 3C6.48 3 2 6.92 2 11.5c0 2.2 1.02 4.19 2.7 5.68L4 21l4.07-1.35C9.26 20.21 10.6 20.5 12 20.5c5.52 0 10-3.92 10-9S17.52 3 12 3z" />
-        </svg>
-      </button>
-    </div >
+      <BotaoChat onClick={toggleChat} />
+    </div>
   );
 }
 
